@@ -1,0 +1,65 @@
+.visual {
+    position: relative;
+    // padding-bottom: 70%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+        @include pos-abs;
+        height: 100%;
+    }
+}
+
+.references__brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+    img {
+        max-width: 120px;
+        margin-left: 4rem;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+}
+
+.about__top {
+    margin-bottom: 6rem;
+}
+
+.about__list {
+    margin-top: 3rem;
+
+    &-item {
+        margin-bottom: 1rem;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: $primary-color;
+            margin-right: 1rem;
+        }
+    }
+}
+
+.specialties {
+    height: 500px;
+}
+
+
+.specialties__card-list { 
+    display: flex;
+    justify-content: space-between;
+    margin: $container-gutter*2 0;
+
+    & .card {
+        margin-right: $container-gutter;
+    }
+}

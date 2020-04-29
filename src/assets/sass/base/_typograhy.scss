@@ -1,0 +1,38 @@
+body {
+    font-family: $font-family;
+}
+
+p {
+    @include fluid-type(17px, 19px);
+    line-height: 1.4;
+}
+
+.title {
+    @include fluid-type(24px, 40px);
+    color: $text-color;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+    &--colored {
+        color: $primary-color;
+    }
+}
+
+.caption {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    @include fluid-type(12px, 16px);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $secondary-color;
+}
+
+.text {
+    width: 100%;
+    max-width: 600px;
+    word-break: break-word;
+
+    &+.btn {
+       margin-top: 2rem; 
+    }
+}

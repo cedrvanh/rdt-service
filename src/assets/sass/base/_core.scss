@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+input, 
+textarea {
+    border: none;
+}
+
+textarea {
+    resize: vertical;
+}

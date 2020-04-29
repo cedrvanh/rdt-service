@@ -1,0 +1,138 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    &--wide {
+        max-width: $container-width-xl;
+    }
+
+    &--small {
+        max-width: $container-width-sm;
+    }
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap: row wrap;
+}
+
+.flex {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -$container-gutter;
+    margin-right: -$container-gutter;
+
+    &--rev {
+        flex-direction: row-reverse;
+    }
+}
+
+.flex__item {
+    flex: 0 0 auto;
+    padding-left: $container-gutter;
+    padding-right: $container-gutter;
+
+    &--centered {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include mobile {
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+.flex__item-1 {
+    flex-basis: 8.333%;
+    max-width: 8.333%;
+}
+
+.flex__item-2 {
+    flex-basis: 16.666%;
+    max-width: 16.666%;
+}
+
+.flex__item-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.flex__item-4 {
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+}
+
+.flex__item-5 {
+    flex-basis: 41.666%;
+    max-width: 41.666%;
+}
+
+.flex__item-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.flex__item-7 {
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+}
+
+.flex__item-8 {
+    flex-basis: 66.666%;
+    max-width: 66.666%;
+}
+
+.flex__item-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.flex__item-10 {
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+}
+
+.flex__item-11 {
+    flex-basis: 91.666%;
+    max-width: 91.666%;
+}
+
+.flex__item-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.section {
+    position: relative;
+    padding: 7rem 0;
+
+    &--bar {
+        margin: 3rem 0;
+        padding: 4rem 0; 
+        text-align: center;
+        background-color: $background-color;
+    }
+}
+
+.section__text {
+    width: 100%;
+    padding: 6rem 0;
+    // max-width: 650px;
+    // margin-left: auto;
+    // margin-right: auto;
+}
+
+// .section__pull-right {
+//     width: calc(100% + 90px);
+//     max-width: none;
+//     margin-right: -90px; 
+// }
