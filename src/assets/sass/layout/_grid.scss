@@ -12,6 +12,10 @@
     &--small {
         max-width: $container-width-sm;
     }
+
+    @include laptop {
+        max-width: 1000px;
+    }
 }
 
 .container--flex {

@@ -19,7 +19,13 @@
 
 
 @mixin mobile {
-    @media (max-width: #{$breakpoint-desktop}) {
+    @media (max-width: #{$breakpoint-mobile}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-desktop}) {
         @content;
     }
 }
