@@ -4,10 +4,20 @@
     min-height: 375px;
     overflow: hidden;
     background-color: $secondary-color;
+    
+
+    &:hover .card__image {
+        transform: scale(1.05);
+    }
+
+    &:hover .card__content {
+        background-color: rgba(0, 0, 0, 0.2);        
+    }
 
     &__image {
         height: 375px;
-        
+        transition: transform .2s $cubic-bezier;
+
         img {
             height: 100%;
         }
@@ -25,5 +35,6 @@
         padding: 1.5rem;
         background-color: rgba(0, 0, 0, 0.3);
         color: #fff;
+        transition: background-color .2s $cubic-bezier;
     }
 }

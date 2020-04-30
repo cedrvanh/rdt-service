@@ -27,6 +27,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "@drewbot/sass-flexbox-grid": "^2.0.7"
+    "@drewbot/sass-flexbox-grid": "^2.0.7",
+    "aos": "^2.3.4"
   }
 }

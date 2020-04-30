@@ -8,6 +8,10 @@
         @include pos-abs;
         height: 100%;
     }
+
+    @include mobile {
+        padding-top: 60%;
+    }
 }
 
 .references__brands {
@@ -29,6 +33,10 @@
 
 .about__top {
     margin-bottom: 6rem;
+
+    @include mobile {
+        margin: 0;
+    }
 }
 
 .about__list {
@@ -50,16 +58,33 @@
 }
 
 .specialties {
+    display: block;
     height: 500px;
+
+    @include mobile {
+        height: auto;
+    }
 }
 
 
 .specialties__card-list { 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: $container-gutter*2 0;
 
     & .card {
+        flex-basis: calc(25% - 32px);
         margin-right: $container-gutter;
+
+        @include mobile {
+            margin-top: 2rem;
+            margin-right: 0;
+            flex-basis: 100%;
+        }
+    }
+
+    @include mobile {
+        margin: 0;
     }
 }

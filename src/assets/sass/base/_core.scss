@@ -13,6 +13,7 @@ html,
 body {
     box-sizing: border-box;
     width: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -39,4 +40,10 @@ textarea {
 
 textarea {
     resize: vertical;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
 }

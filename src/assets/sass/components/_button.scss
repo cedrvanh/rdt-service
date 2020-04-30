@@ -8,14 +8,23 @@
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
+    transition: all 1s ease;
 
     &--primary {
         background-color: $primary-color;
+
+        &:hover {
+            background-color: $primary-hover-color;
+        }
     }
 
     &--secondary {
         color: $primary-color;
         background-color: transparent;
         padding: 0.5rem 0;
+
+        &:hover {
+            color: $primary-hover-color;
+        }
     }
 }

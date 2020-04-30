@@ -6,11 +6,14 @@ $vanilla: #F8F8F8;
 $black: #111111; 
 
 $primary-color: $blue;
+$primary-hover-color: rgb(9, 66, 141);
 $secondary-color: $grey;
 $background-color: $vanilla;
 $text-color: $black;
 
 $border-default: 16px;
+
+$cubic-bezier: cubic-bezier(.2,.36,.79,.59);;
 
 $breakpoint-desktop: 960px;
 $breakpoint-mobile: 480px;

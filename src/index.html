@@ -11,7 +11,7 @@
         <header class="header row">
             <div class="container container--flex">
                 <div class="header__brand">
-                    <span>RDT Service</span>
+                    <a href="index.html"><span>RDT Service</span></a>
                 </div>
                 <nav class="header__menu">
                     <ul class="nav">
@@ -43,7 +43,7 @@
                             <a href="#" class="btn btn--primary btn--link">Contacteer Ons</a>
                         </div>
                     </div>
-                    <div class="flex__item flex__item-4">
+                    <div class="flex__item flex__item-4" data-aos="fade-left">
                         <figure class="visual section__pull-right">
                             <img src="assets/images/raamdecoratie-buiten.jpg" alt="" />
                         </figure>
@@ -80,7 +80,7 @@
                 <div class="about">
                     <div class="about__top">
                         <div class="flex">
-                            <div class="flex__item flex__item-6">
+                            <div class="flex__item flex__item-6"  data-aos="fade-right">
                                 <figure class="visual">
                                     <img src="assets/images/domotica.jpg" alt="Domotica">
                                 </figure>
@@ -100,7 +100,7 @@
                     </div>
                     <div class="about__bottom">
                         <div class="flex flex--rev">
-                            <div class="flex__item flex__item-6">
+                            <div class="flex__item flex__item-6" data-aos="fade-left">
                                 <figure class="visual">
                                     <img src="assets/images/zonwering.jpg" alt="Zonwering">
                                 </figure>
@@ -129,61 +129,61 @@
         
         <section class="section section--bar specialties">
             <div class="container">
-                <span class="caption">Samen met jou zoeken we naar de beste oplossingen</span>
-                <h1 class="title">Onze specialiteiten</h1> 
+                <span class="caption"  data-aos="fade-up">Samen met jou zoeken we naar de beste oplossingen</span>
+                <h1 class="title"  data-aos="fade-up">Onze specialiteiten</h1> 
                 
                 <div class="specialties__card-list">
-                    <article class="card">
+                    <a href="diensten.html#raamdecoratie" class="card" data-aos="fade-up" data-aos-delay="50">
                         <figure class="card__image">
                             <img src="assets/images/raamdecoratie.jpg" alt="Raamdecoratie">
                         </figure>
                         <div class="card__content">
                             <h2 class="card__title">Raamdecoratie</h2>
                         </div>
-                    </article>
-                    <article class="card">
+                    </a>
+                    <a href="diensten.html#zonwering" class="card" data-aos="fade-up" data-aos-delay="100">
                         <figure class="card__image">
                             <img src="assets/images/zonwering.jpg" alt="Zonwering">
                         </figure>
                         <div class="card__content">
                             <h2 class="card__title">Zonwering</h2>
                         </div>
-                    </article>
-                    <article class="card">
+                    </a>
+                    <a href="diensten.html#domotica" class="card" data-aos="fade-up" data-aos-delay="150">
                         <figure class="card__image">
                             <img src="assets/images/domotica.jpg" alt="Domotica">
                         </figure>
                         <div class="card__content">
                             <h2 class="card__title">Domotica</h2>
                         </div>
-                    </article>
-                    <article class="card">
+                    </a>
+                    <a href="diensten.html#motoriseren" class="card" data-aos="fade-up" data-aos-delay="200">
                         <figure class="card__image">
                             <img src="assets/images/motoriseren.jpg" alt="Motoriseren">
                         </figure>
                         <div class="card__content">
                             <h2 class="card__title">Motoriseren</h2>
                         </div>
-                    </article>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="section">
-            <div class="container ">
+        <section class="section" id="contact">
+            <div class="container">
                 <div class="flex">
                     <div class="flex__item flex__item-6">
                         <h1 class="title">Contacteer ons</h1>
                         <p class="text">
-                            Heb je vragen of wil je een afspraak maken? Laat ons iets weten en wij maken de nodige tijd voor je vrij om jou zo optimaal mogelijk te assisteren  
+                            Heb je vragen of wil je een afspraak maken? Laat ons iets weten en wij maken de nodige tijd voor je vrij om jou zo optimaal mogelijk te assisteren  <br><br>
                         </p>
                         <p class="text">
                             Bergstraat 85
                             <br>8510 Marke
-                            <br>info@rdt-service.be    
+                            <br><a href="mailto:info@rdt-service.be">info@rdt-service.be</a>    
                         </p>
                         <p class="text">
-                            T: +32 (0) 476 33 47 07
+                            <a href="tel:0476 33 47 07">T: +32 (0) 476 33 47 07</a>
                         </p>
                         <p class="text">
                             BTW BE 0671 777 854
@@ -198,17 +198,46 @@
                                 <input type="text" placeholder="Email*" class="form__control">
                             </div>
                             <div class="form__group">
-                                <textarea rows="10" placeholder="Naam*" class="form__control">Bericht*</textarea>                        
+                                <textarea rows="10" placeholder="Bericht*" class="form__control"></textarea>                        
                             </div>
-                            <a class="btn btn--primary">Versturen</a>
+                            <button type="submit" class="btn btn--primary">Versturen</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        
+    <footer class="footer">
+        <div class="container">
+            <div class="flex">
+                <div class="flex__item flex__item-12">
+                    <div class="footer__wrapper flex--space-between">
+                        <div class="footer__left">
+                            <h3>Contact</h3>
+                            <p>
+                                <a href="tel:0476 33 47 07">Bel 0476 33 47 07</a><br>
+                                <a href="mailto:info@rdt-service.be">info@rdt-service.be</a><br>
+                                Bergstraat 85, 8510 Marke
+                            </p>
+                        </div>
+                        <div class="footer__right">
+                            <h3>Volg ons</h3>
+                            <a href="https://www.facebook.com/RDT-service-1903144473266154/" target="_blank">
+                                Facebook
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__meta flex--space-between">
+                        <div class="footer__left">
+                            <a href="index.html">RDT Service</a>
+                        </div>
+                        <div class="footer__right">
+                            <span>Site by <a href="https://www.vanhaegenberg.be/" target="_blank">vanhaegeneberg.be</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
