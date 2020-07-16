@@ -146,6 +146,10 @@
         height: 350px;
     }
 
+    &--huge {
+        padding: 12.5rem 0;
+    } 
+
     @include mobile {
         padding: 1rem 0;
 
@@ -155,7 +159,7 @@
     }
 }
 
-.section__text {
+.section__content {
     width: 100%;
     padding: 6rem 0;
     // max-width: 650px;
@@ -164,6 +168,10 @@
 
     @include mobile {
         padding: 2rem 0;
+    }
+
+    .title {
+        margin-bottom: $container-gutter;
     }
 }
 

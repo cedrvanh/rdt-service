@@ -28,6 +28,8 @@
   },
   "dependencies": {
     "@drewbot/sass-flexbox-grid": "^2.0.7",
-    "aos": "^2.3.4"
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "aos": "^2.3.4",
+    "swiper": "^5.4.5"
   }
 }

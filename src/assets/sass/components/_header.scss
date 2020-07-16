@@ -9,10 +9,8 @@
 }
 
 .header__brand {
-    span {
-        @include fluid-type(14px, 24px);
-        font-weight: bold;
-    }
+    @include fluid-type(14px, 24px);
+    font-weight: bold;
 }
 
 .nav__item {

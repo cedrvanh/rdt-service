@@ -11,14 +11,16 @@ $secondary-color: $grey;
 $background-color: $vanilla;
 $text-color: $black;
 
-$border-default: 16px;
+$border-default: 32px;
 
 $cubic-bezier: cubic-bezier(.2,.36,.79,.59);;
 
 $breakpoint-desktop: 1440px;
 $breakpoint-mobile: 750px;
 
-$container-gutter: 2rem;
+$gutter: 1rem;
+
+$container-gutter: $gutter * 2;
 $container-margin-extra: 20vw;
 
 $container-width: 1440px;

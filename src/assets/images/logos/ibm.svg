@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="400"><clipPath id="b"><path d="M0-1v83h55.937v236H1.523v82h194.65v-82h-55.938V82h54.414V-1zm554.02 1v82h55.938v236h-54.414v82h138.71V171.84l82.656 228.08 1.68.04 81.172-228.12V400h140.23v-82h-55.938V82h54.415V0h-156.33l-64.726 182.89L711.866 0z"/><path id="a" d="M222.23 0v82h55.937v130h215.31v-24.928s18.011-14.042 23.75-27.367l11.523-25.855s5.352-14.472 5.352-27.405l-2.305-25.855s-3.616-21.063-9.922-27.328l-22.266-25.895S471.276 0 433.75 0zm140.23 82h81.992v76H362.46z"/><use transform="matrix(1 0 0 -1 0 400)" xlink:href="#a"/></clipPath><path fill="none" stroke="#1f70c1" stroke-width="27.37" d="M0 13.683h1030v53.232H0m0 53.232h975v53.242H0v53.222h975v53.222H0m0 53.242h1030v53.242H0" clip-path="url(#b)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109.115" height="43.398" viewBox="0 0 109.115 43.398">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Union_1" data-name="Union 1" d="M93.814,43.4V18.706L84.957,43.394l-.183,0L75.754,18.706V43.4H60.619V34.524h5.937V8.983h-6.1V.108H77.676L84.828,19.9,91.891.108h17.058V8.983h-5.938V34.524h6.1V43.4Zm-69.565,0V34.524h6.1V8.983h-6.1V.108h23.08A11.564,11.564,0,0,1,54.515,3.07l2.43,2.8c.688.678,1.083,2.958,1.083,2.958l.251,2.8a10.02,10.02,0,0,1-.584,2.966l-1.257,2.8a10.019,10.019,0,0,1-2.592,2.962v2.8a10.02,10.02,0,0,1,2.592,2.962l1.257,2.8a10.02,10.02,0,0,1,.584,2.966l-.251,2.8s-.395,2.28-1.083,2.958l-2.43,2.8A11.565,11.565,0,0,1,47.329,43.4Zm15.3-8.874H48.5V26.3H39.55Zm0-17.316H48.5V8.983H39.55ZM.166,43.4V34.524H6.1V8.983H0V0H21.239V8.983H15.3V34.524h6.1V43.4Z" transform="translate(0 -1)" fill="none" stroke="#bfbebe" stroke-width="3"/>
+    </clipPath>
+  </defs>
+  <g id="ibm" transform="translate(0 1)" clip-path="url(#clip-path)">
+    <path id="Path_7" data-name="Path 7" d="M0,13.683H112.215v5.8H0m0,5.8H106.223v5.8H0v5.8H106.223v5.8H0m0,5.8H112.215v5.8H0" transform="translate(0 -13.083)" fill="none" stroke="#bfbebe" stroke-width="3"/>
+  </g>
+</svg>
