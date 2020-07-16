@@ -7,6 +7,16 @@ p {
     line-height: 1.4;
 }
 
+a {
+    text-decoration: none;
+    transition: all .3s ease;
+
+    &:hover {
+        text-decoration: underline;
+        color: grey;
+    }
+}
+
 .title {
     @include fluid-type(24px, 40px);
     color: $text-color;

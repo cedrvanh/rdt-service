@@ -6,6 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RDT Service -  Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '290542452288964');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=290542452288964&ev=PageView&noscript=1"
+    /></noscript>       
 </head>
 <body>
     <main class="main">
@@ -71,19 +86,22 @@
                                             <img class="brand-logo" src="assets/images/logos/deloitte.svg" alt="vdab">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img class="brand-logo" src="assets/images/logos/kbc.svg" alt="ibis" width="85px">
+                                            <img class="brand-logo" src="assets/images/logos/kbc.svg" alt="ibis" style="width: 85px">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img class="brand-logo" src="assets/images/logos/ibm.svg" alt="vdab">
+                                            <img class="brand-logo" src="assets/images/logos/nmbs.svg" alt="nmbs" style="width: 95px">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img class="brand-logo" src="assets/images/logos/ibis.svg" alt="ibis">
+                                            <img class="brand-logo" src="assets/images/logos/ing.svg" alt="nmbs">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img class="brand-logo" src="assets/images/logos/vdab.svg" alt="vdab">
+                                            <h3 class="brand-name">Lotus Eeklo</h3>
                                         </div>
                                         <div class="swiper-slide">
-                                            <img class="brand-logo" src="assets/images/logos/ibis.svg" alt="ibis">
+                                            <h3 class="brand-name">Skyline Roeselare</h3>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <h3 class="brand-name">Koninklijke Villa Oostende</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -199,27 +217,28 @@
                         <p class="paragraph">
                             Bergstraat 85
                             <br>8510 Marke
-                            <br><a href="mailto:info@rdt-service.be">info@rdt-service.be</a>    
+                            <br><a href="mailto:info@rdt-service.be">info@rdt-service.be</a>
+                            <br><br><a href="tel:0476 33 47 07">T: +32 (0) 476 33 47 07</a>  
+                            <br>BTW BE 0671 777 854                             
                         </p>
+                        <br>
                         <p class="paragraph">
-                            <a href="tel:0476 33 47 07">T: +32 (0) 476 33 47 07</a>
-                        </p>
-                        <p class="paragraph">
-                            BTW BE 0671 777 854
+                            <strong>Maandag - vrijdag</strong>
+                            <br>9u - 17u
                         </p>
                     </div>
                     <div class="flex__item flex__item-6">
-                        <form class="form">
+                        <form class="form" method="POST" action="mail.php">
                             <div class="form__group">
-                                <input type="text" placeholder="Naam*" class="form__control">
+                                <input type="text" name="name" placeholder="Naam*" class="form__control">
                             </div>
                             <div class="form__group">
-                                <input type="text" placeholder="Email*" class="form__control">
+                                <input type="text" name="email" placeholder="Email*" class="form__control">
                             </div>
                             <div class="form__group">
-                                <textarea rows="10" placeholder="Bericht*" class="form__control"></textarea>                        
+                                <textarea rows="10" name="message" placeholder="Bericht*" class="form__control"></textarea>                        
                             </div>
-                            <button type="submit" class="btn btn--primary"><i class="fas fa-arrow-right btn-icon"></i> Versturen</button>
+                            <button type="submit" name="submit" class="btn btn--primary"><i class="fas fa-arrow-right btn-icon"></i> Versturen</button>
                         </form>
                     </div>
                 </div>

@@ -2,14 +2,16 @@ $font-family: 'Montserrat', sans-serif;
 
 $blue: #0B52AE; 
 $grey: #BFBFBF;
+$darkGrey: #BFBEBE;
 $vanilla: #F8F8F8;
 $black: #111111; 
 
 $primary-color: $blue;
-$primary-hover-color: rgb(9, 66, 141);
+$primary-hover-color: darken($blue, 10);
 $secondary-color: $grey;
 $background-color: $vanilla;
 $text-color: $black;
+$brand-color: $darkGrey;
 
 $border-default: 32px;
 

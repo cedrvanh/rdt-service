@@ -71,6 +71,13 @@
     }
 }
 
+.specialty-link {
+    color: $primary-color;
+
+    &:hover {
+        color: $primary-hover-color;
+    }
+}
 
 .specialties__card-list { 
     display: flex;
@@ -101,6 +108,11 @@
     @include mobile {
         margin-top: $gutter;
     }
+}
+
+.brand-name {
+    @include fluid-type(14px, 20px);
+    color: $brand-color;
 }
 
 .swiper-wrapper {
