@@ -1,15 +1,36 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+const basePath = process.cwd();
+
+const paths = {
+    root: '',
+}
+
+paths.assets = `assets/`,
+paths.css = `${paths.assets}css/`,
+paths.sass = `${paths.assets}sass/`,
+paths.images = `${paths.assets}images/`,
+paths.js = `${paths.assets}js/`,
 
 module.exports = {
     entry: './src/assets/js/index.js',
+    output: {
+        path: path.join(basePath, `dist/`),
+        filename: `${paths.js}index.js`
+    },
     module:  {
         rules: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader"
+                    loader: "babel-loader",
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
                 }
             },
             {
@@ -17,14 +38,19 @@ module.exports = {
                 use: [
                     {
                         loader: "html-loader",
-                        options: { minimize: true }
+                        options: { minimize: false }
                     }
                 ]
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.(png|svg|jpe?g|gif|ico)$/,
                 use: [
-                    "file-loader"
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: `${paths.images}[name].[hash:8].[ext]`,
+                        }
+                    }
                 ]
             },
             {
@@ -40,17 +66,24 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebPackPlugin({
+        new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
             template: "./src/index.html",
-            filename: "./index.html"
+            filename: "./index.html",
+            minify: false,
         }),
-        new HtmlWebPackPlugin({
+        new HtmlWebpackPlugin({
             template: "./src/pages/diensten.html",
-            filename: "./diensten.html"
+            filename: "./diensten.html",
+            minify: false,
         }),
         new MiniCssExtractPlugin({
-            filename: "[name].css",
+            filename: `${paths.css}[name].[contenthash].css`,
             chunkFilename: "[id].css"
         }),
-    ]
+    ],
+    devServer: {
+        port: 8080,
+        open: true,
+    },
 }
